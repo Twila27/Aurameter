@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Arenas>
+	<Arena name="Swampy Earth" background="Swamp" titleCard="SwampTitleCard">
+		<Pattern name="Clay Golem Row" origin="1,0">
+			<Spawn offset="-2,0" enemy="Clay Golem"/>
+			<Spawn offset="0,0" enemy="Clay Golem"/>
+			<Spawn offset="2,0" enemy="Clay Golem"/>
+		</Pattern>
+		<Pattern name="Clay Golem Column" origin="0,1">
+			<Spawn offset="0,-2" enemy="Clay Golem"/>
+			<Spawn offset="0,0" enemy="Clay Golem"/>
+			<Spawn offset="0,2" enemy="Clay Golem"/>
+		</Pattern>
+		<Pattern name="Clay Golem Cross">
+			<Spawn offset="-2,0" enemy="Clay Golem"/>
+			<Spawn offset="2,0" enemy="Clay Golem"/>
+			<Spawn offset="0,-2" enemy="Rock Golem"/>
+			<Spawn offset="0,0" enemy="Clay Golem"/>
+			<Spawn offset="0,2" enemy="Clay Golem"/>
+		</Pattern>
+		<Pattern name="Baby's First Enemy Formation" origin="-4,-4"/>
+	</Arena>
+</Arenas>

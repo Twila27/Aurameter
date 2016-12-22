@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Arenas>
+	<Arena name="Molten Earth" background="Volcano" titleCard="VolcanoTitleCard">
+		<Pattern name="Lava Snake Row" origin="4,4">
+			<Spawn offset="-1,0" enemy="Lava Snake"/>
+			<Spawn offset="0,0" enemy="Lava Snake"/>
+			<Spawn offset="1,0" enemy="Lava Snake"/>
+		</Pattern>
+		<Pattern name="Lava Snake Column" origin="4,4">
+			<Spawn offset="0,-1" enemy="Lava Snake"/>
+			<Spawn offset="0,0" enemy="Lava Snake"/>
+			<Spawn offset="0,1" enemy="Lava Snake"/>
+		</Pattern>
+		<Pattern name="Lava Snake Cross" origin="4,4">
+			<Spawn offset="-1,0" enemy="Lava Snake"/>
+			<Spawn offset="1,0" enemy="Lava Snake"/>
+			<Spawn offset="0,-1" enemy="Rock Golem"/>
+			<Spawn offset="0,0" enemy="Lava Snake"/>
+			<Spawn offset="0,1" enemy="Lava Snake"/>
+		</Pattern>
+		<Pattern name="Baby's First Enemy Formation" origin="-4,-4"/>
+	</Arena>
+</Arenas>

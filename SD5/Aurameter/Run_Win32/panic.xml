@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SpriteResources>
+	<SpriteResource name="Mage" image="Data/Images/Sprites/Test.png" uvTopLeft="0.0000,0.0000" uvBottomRight="1.0000,1.0000"/>
+	<SpriteResource name="Ship" image="Data/Images/Sprites/Ship.png" uvTopLeft="0.0000,0.0000" uvBottomRight="1.0000,1.0000"/>
+	<SpriteResource name="Title_UI" image="Data/Images/Sprites/UI/Title.png" uvTopLeft="0.0000,0.0000" uvBottomRight="1.0000,1.0000"/>
+</SpriteResources>

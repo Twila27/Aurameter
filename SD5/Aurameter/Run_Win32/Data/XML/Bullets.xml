@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Bullets>
+	<Bullet name="Ball" 	resourceName="Ball Bullet"/>
+	<Bullet name="Capsule" 	resourceName="Capsule Bullet"/>
+	<Bullet name="Cross" 	resourceName="Cross Bullet"/>
+	<Bullet name="Star" 	resourceName="Star Bullet"/>
+	<Bullet name="Chevron"	resourceName="Chevron Bullet"/>
+</Bullets>

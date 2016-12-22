@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugInline|Win32">
+      <Configuration>DebugInline</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Debug|Win32">
+      <Configuration>Tools Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParty\Parsers\xmlparser\xmlParser.cpp" />
+    <ClCompile Include="..\ThirdParty\stb\stb_image.c" />
+    <ClCompile Include="..\ThirdParty\stb\stb_image_write.c" />
+    <ClCompile Include="Audio\TheAudio.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Concurrency\ConcurrencyUtils.cpp" />
+    <ClCompile Include="Concurrency\JobUtils.cpp" />
+    <ClCompile Include="Core\Command.cpp" />
+    <ClCompile Include="Core\Entity.cpp" />
+    <ClCompile Include="Core\InPlaceLinkedList.cpp" />
+    <ClCompile Include="Core\Logger.cpp" />
+    <ClCompile Include="Core\TheConsole.cpp" />
+    <ClCompile Include="Core\TheEventSystem.cpp" />
+    <ClCompile Include="EngineCommon.cpp" />
+    <ClCompile Include="Error\ErrorWarningAssert.cpp" />
+    <ClCompile Include="FileUtils\FileUtils.cpp" />
+    <ClCompile Include="FileUtils\Readers\BinaryReader.cpp" />
+    <ClCompile Include="FileUtils\Readers\FileBinaryReader.cpp" />
+    <ClCompile Include="FileUtils\Writers\BinaryWriter.cpp" />
+    <ClCompile Include="FileUtils\Writers\FileBinaryWriter.cpp" />
+    <ClCompile Include="FileUtils\XMLUtils.cpp" />
+    <ClCompile Include="Input\TheInput.cpp" />
+    <ClCompile Include="Input\XboxController.cpp" />
+    <ClCompile Include="Math\AABB2.cpp" />
+    <ClCompile Include="Math\AABB3.cpp" />
+    <ClCompile Include="Math\Camera2D.cpp" />
+    <ClCompile Include="Math\Camera3D.cpp" />
+    <ClCompile Include="Math\EulerAngles.cpp" />
+    <ClCompile Include="Math\Interval.cpp" />
+    <ClCompile Include="Math\MathUtils.cpp" />
+    <ClCompile Include="Math\Matrix4x4.cpp" />
+    <ClCompile Include="Math\MatrixStack.cpp" />
+    <ClCompile Include="Math\Noise.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\PolarCoords.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Memory\ByteUtils.cpp" />
+    <ClCompile Include="Memory\Callstack.cpp" />
+    <ClCompile Include="Memory\CBuffer.cpp" />
+    <ClCompile Include="Memory\Memory.cpp" />
+    <ClCompile Include="Memory\PageAllocator.cpp" />
+    <ClCompile Include="Memory\UntrackedAllocator.cpp" />
+    <ClCompile Include="Physics\Forces.cpp" />
+    <ClCompile Include="Physics\EphanovParticle.cpp" />
+    <ClCompile Include="Physics\EphanovParticleSystem.cpp" />
+    <ClCompile Include="Physics\PhysicsUtils.cpp" />
+    <ClCompile Include="Renderer\AnimatedSprite.cpp" />
+    <ClCompile Include="Renderer\AnimationSequence.cpp" />
+    <ClCompile Include="Renderer\BitmapFont.cpp" />
+    <ClCompile Include="Renderer\DebugRenderCommand.cpp" />
+    <ClCompile Include="Renderer\FixedBitmapFont.cpp" />
+    <ClCompile Include="Renderer\FrameBuffer.cpp" />
+    <ClCompile Include="Renderer\FramebufferEffect.cpp" />
+    <ClCompile Include="Renderer\Light.cpp" />
+    <ClCompile Include="Renderer\Material.cpp" />
+    <ClCompile Include="Renderer\Mesh.cpp" />
+    <ClCompile Include="Renderer\MeshBuilder.cpp" />
+    <ClCompile Include="Renderer\MeshRenderer.cpp" />
+    <ClCompile Include="Renderer\OpenGLExtensions.cpp" />
+    <ClCompile Include="Renderer\Particles\Particle.cpp" />
+    <ClCompile Include="Renderer\Particles\ParticleEmitter.cpp" />
+    <ClCompile Include="Renderer\Particles\ParticleEmitterDefinition.cpp" />
+    <ClCompile Include="Renderer\Particles\ParticleSystem.cpp" />
+    <ClCompile Include="Renderer\Particles\ParticleSystemDefinition.cpp" />
+    <ClCompile Include="Renderer\Particles\ParticleSystemManager.cpp" />
+    <ClCompile Include="Renderer\RenderState.cpp" />
+    <ClCompile Include="Renderer\Rgba.cpp" />
+    <ClCompile Include="Renderer\RiftUtils.cpp" />
+    <ClCompile Include="Renderer\Sampler.cpp" />
+    <ClCompile Include="Renderer\Shader.cpp" />
+    <ClCompile Include="Renderer\ShaderProgram.cpp" />
+    <ClCompile Include="Renderer\Skeleton.cpp" />
+    <ClCompile Include="Renderer\Sprite.cpp" />
+    <ClCompile Include="Renderer\SpriteAnimation.cpp" />
+    <ClCompile Include="Renderer\ResourceDatabase.cpp" />
+    <ClCompile Include="Renderer\RenderLayer.cpp" />
+    <ClCompile Include="Renderer\SpriteRenderer.cpp" />
+    <ClCompile Include="Renderer\SpriteResource.cpp" />
+    <ClCompile Include="Renderer\SpriteSheet.cpp" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Renderer\TheRenderer.cpp" />
+    <ClCompile Include="Renderer\VertexBuffer.cpp" />
+    <ClCompile Include="Renderer\VertexDefinition.cpp" />
+    <ClCompile Include="Renderer\Vertexes.cpp" />
+    <ClCompile Include="String\StringUtils.cpp" />
+    <ClCompile Include="TheEngine.cpp" />
+    <ClCompile Include="Time\Stopwatch.cpp" />
+    <ClCompile Include="Time\Time.cpp" />
+    <ClCompile Include="Tools\FBXUtils.cpp" />
+    <ClCompile Include="Tools\Profiling\ProfileLogSection.cpp" />
+    <ClCompile Include="Tools\Profiling\ProfileScopedSection.cpp" />
+    <ClCompile Include="Tools\Profiling\ProfileSection.cpp" />
+    <ClCompile Include="Tools\Profiling\Profiler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod.hpp" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_codec.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_common.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_dsp.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_dsp_effects.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_errors.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_output.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_studio.h" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_studio.hpp" />
+    <ClInclude Include="..\ThirdParty\fmodStudio\fmod_studio_common.h" />
+    <ClInclude Include="..\ThirdParty\Parsers\xmlparser\xmlParser.h" />
+    <ClInclude Include="..\ThirdParty\stb\stb_image.h" />
+    <ClInclude Include="..\ThirdParty\stb\stb_image_write.h" />
+    <ClInclude Include="Audio\TheAudio.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="BuildConfig.hpp" />
+    <ClInclude Include="Concurrency\ConcurrencyUtils.hpp" />
+    <ClInclude Include="Concurrency\CriticalSection.hpp" />
+    <ClInclude Include="Concurrency\JobUtils.hpp" />
+    <ClInclude Include="Concurrency\Thread.hpp" />
+    <ClInclude Include="Concurrency\ThreadSafeQueue.hpp" />
+    <ClInclude Include="Concurrency\ThreadSafeVector.hpp" />
+    <ClInclude Include="Core\Command.hpp" />
+    <ClInclude Include="Core\Entity.hpp" />
+    <ClInclude Include="Core\EngineEvent.hpp" />
+    <ClInclude Include="Core\InPlaceLinkedList.hpp" />
+    <ClInclude Include="Core\Logger.hpp" />
+    <ClInclude Include="Core\TheConsole.hpp" />
+    <ClInclude Include="Core\TheEventSystem.hpp" />
+    <ClInclude Include="EngineCommon.hpp" />
+    <ClInclude Include="Error\ErrorWarningAssert.hpp" />
+    <ClInclude Include="FileUtils\FileUtils.hpp" />
+    <ClInclude Include="FileUtils\Readers\BinaryReader.hpp" />
+    <ClInclude Include="FileUtils\Readers\FileBinaryReader.hpp" />
+    <ClInclude Include="FileUtils\Writers\BinaryWriter.hpp" />
+    <ClInclude Include="FileUtils\Writers\FileBinaryWriter.hpp" />
+    <ClInclude Include="FileUtils\XMLUtils.hpp" />
+    <ClInclude Include="Input\TheInput.hpp" />
+    <ClInclude Include="Input\XboxController.hpp" />
+    <ClInclude Include="Math\AABB2.hpp" />
+    <ClInclude Include="Math\AABB3.hpp" />
+    <ClInclude Include="Math\Camera2D.hpp" />
+    <ClInclude Include="Math\Camera3D.hpp" />
+    <ClInclude Include="Math\EulerAngles.hpp" />
+    <ClInclude Include="Math\Interval.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\Matrix4x4.hpp" />
+    <ClInclude Include="Math\MatrixStack.hpp" />
+    <ClInclude Include="Math\Noise.hpp" />
+    <ClInclude Include="Math\Plane.hpp" />
+    <ClInclude Include="Math\PolarCoords.hpp" />
+    <ClInclude Include="Math\Vector2.hpp" />
+    <ClInclude Include="Math\Vector3.hpp" />
+    <ClInclude Include="Math\Vector4.hpp" />
+    <ClInclude Include="Memory\BitUtils.hpp" />
+    <ClInclude Include="Memory\ByteUtils.hpp" />
+    <ClInclude Include="Memory\Callstack.hpp" />
+    <ClInclude Include="Memory\CBuffer.hpp" />
+    <ClInclude Include="Memory\Memory.hpp" />
+    <ClInclude Include="Memory\ObjectPool.hpp" />
+    <ClInclude Include="Memory\PageAllocator.hpp" />
+    <ClInclude Include="Memory\UntrackedAllocator.hpp" />
+    <ClInclude Include="Physics\Cloth.hpp" />
+    <ClInclude Include="Physics\Forces.hpp" />
+    <ClInclude Include="Physics\EphanovParticle.hpp" />
+    <ClInclude Include="Physics\EphanovParticleSystem.hpp" />
+    <ClInclude Include="Physics\PhysicsUtils.hpp" />
+    <ClInclude Include="Renderer\AnimatedSprite.hpp" />
+    <ClInclude Include="Renderer\AnimationSequence.hpp" />
+    <ClInclude Include="Renderer\BitmapFont.hpp" />
+    <ClInclude Include="Renderer\DebugRenderCommand.hpp" />
+    <ClInclude Include="Renderer\FixedBitmapFont.hpp" />
+    <ClInclude Include="Renderer\FrameBuffer.hpp" />
+    <ClInclude Include="Renderer\FramebufferEffect.hpp" />
+    <ClInclude Include="Renderer\glext.h" />
+    <ClInclude Include="Renderer\Light.hpp" />
+    <ClInclude Include="Renderer\Material.hpp" />
+    <ClInclude Include="Renderer\Mesh.hpp" />
+    <ClInclude Include="Renderer\MeshBuilder.hpp" />
+    <ClInclude Include="Renderer\MeshRenderer.hpp" />
+    <ClInclude Include="Renderer\OpenGLExtensions.hpp" />
+    <ClInclude Include="Renderer\Particles\Particle.hpp" />
+    <ClInclude Include="Renderer\Particles\ParticleEmitter.hpp" />
+    <ClInclude Include="Renderer\Particles\ParticleEmitterDefinition.hpp" />
+    <ClInclude Include="Renderer\Particles\ParticleSystem.hpp" />
+    <ClInclude Include="Renderer\Particles\ParticleSystemDefinition.hpp" />
+    <ClInclude Include="Renderer\Particles\ParticleSystemManager.hpp" />
+    <ClInclude Include="Renderer\RenderState.hpp" />
+    <ClInclude Include="Renderer\Rgba.hpp" />
+    <ClInclude Include="Renderer\RiftUtils.hpp" />
+    <ClInclude Include="Renderer\Sampler.hpp" />
+    <ClInclude Include="Renderer\Shader.hpp" />
+    <ClInclude Include="Renderer\ShaderProgram.hpp" />
+    <ClInclude Include="Renderer\Skeleton.hpp" />
+    <ClInclude Include="Renderer\Sprite.hpp" />
+    <ClInclude Include="Renderer\SpriteAnimation.hpp" />
+    <ClInclude Include="Renderer\ResourceDatabase.hpp" />
+    <ClInclude Include="Renderer\RenderLayer.hpp" />
+    <ClInclude Include="Renderer\SpriteRenderer.hpp" />
+    <ClInclude Include="Renderer\SpriteResource.hpp" />
+    <ClInclude Include="Renderer\SpriteSheet.hpp" />
+    <ClInclude Include="Renderer\Texture.hpp" />
+    <ClInclude Include="Renderer\TheRenderer.hpp" />
+    <ClInclude Include="Renderer\VertexBuffer.hpp" />
+    <ClInclude Include="Renderer\VertexDefinition.hpp" />
+    <ClInclude Include="Renderer\Vertexes.hpp" />
+    <ClInclude Include="Renderer\wglext.h" />
+    <ClInclude Include="String\StringUtils.hpp" />
+    <ClInclude Include="TheEngine.hpp" />
+    <ClInclude Include="Time\Stopwatch.hpp" />
+    <ClInclude Include="Time\Time.hpp" />
+    <ClInclude Include="Tools\FBXUtils.hpp" />
+    <ClInclude Include="Tools\Profiling\ProfileLogSection.hpp" />
+    <ClInclude Include="Tools\Profiling\ProfilePrintScopedSection.hpp" />
+    <ClInclude Include="Tools\Profiling\ProfileScopedSection.hpp" />
+    <ClInclude Include="Tools\Profiling\ProfileSection.hpp" />
+    <ClInclude Include="Tools\Profiling\Profiler.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\ThirdParty\fmodStudio\fmod_vc.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\ThirdParty\fmodStudio\fmodstudio_vc.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\ThirdParty\fmodStudio\ovrfmod.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{55D3ADA9-2BCA-4275-945B-5E9096185DCF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(FBXSDK_DIR)include\;$(OCULUSSDK_DIR)Include\;$(OCULUSSDK_DIR)..\LibOVRKernel\Src;$(OCULUS_AUDIOSDK_DIR)Plugins\FMOD\Include</IncludePath>
+    <LibraryPath>$(FBXSDK_DIR)\lib\vs2015\$(PlatformShortName)\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(FBXSDK_DIR)include\;$(OCULUSSDK_DIR)Include\;$(OCULUSSDK_DIR)..\LibOVRKernel\Src;$(OCULUS_AUDIOSDK_DIR)Plugins\FMOD\Include</IncludePath>
+    <LibraryPath>$(FBXSDK_DIR)\lib\vs2015\$(PlatformShortName)\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(FBXSDK_DIR)include\;$(OCULUSSDK_DIR)Include\;$(OCULUSSDK_DIR)..\LibOVRKernel\Src;$(OCULUS_AUDIOSDK_DIR)Plugins\FMOD\Include</IncludePath>
+    <LibraryPath>$(FBXSDK_DIR)\lib\vs2015\$(PlatformShortName)\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(FBXSDK_DIR)include\;$(OCULUSSDK_DIR)Include\;$(OCULUSSDK_DIR)..\LibOVRKernel\Src;$(OCULUS_AUDIOSDK_DIR)Plugins\FMOD\Include</IncludePath>
+    <LibraryPath>$(FBXSDK_DIR)\lib\vs2015\$(PlatformShortName)\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TOOLS_BUILD;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

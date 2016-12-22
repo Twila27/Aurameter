@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Arenas>
+	<Arena name="Another Earth" background="Space" titleCard="SpaceTitleCard">
+		<Pattern name="All Enemies">
+			<Spawn offset="-1,0" enemy="Sand Golem"/>
+			<Spawn offset="1,0" enemy="Clay Golem"/>
+			<Spawn offset="0,0" enemy="Rock Golem"/>
+			<Spawn offset="0,-1" enemy="Lava Snake"/>
+			<Spawn offset="0,1" enemy="Ice Kite"/>
+		</Pattern>
+		<Pattern name="Baby's First Enemy Formation" origin="-4,-4"/>
+	</Arena>
+</Arenas>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<SpriteResources>
+	<SpriteResource name="GetShaderIn" 		image="Data/Images/Sprites/Test.png" uvTopLeft="0.0000,0.0000" uvBottomRight="1.0000,1.0000" material="OverrideExample"/>
+
+	<SpriteResource name="soft_particle"	image="Data/Images/Particles/particle.png" />
+	
+	<SpriteResource name="Mage" 			image="Data/Images/Sprites/Test.png" uvTopLeft="0.0000,0.0000" uvBottomRight="1.0000,1.0000" material=""/>
+	<SpriteResource name="Ship" 			image="Data/Images/Sprites/Ship.png" 				/>
+	<SpriteResource name="Player" 			image="Data/Images/Sprites/Ship.png" 				/>
+	<SpriteResource name="Deflector" 		image="Data/Images/Sprites/Deflector_Square.png" 	/>
+	
+	<SpriteResource name="Title_UI" 		image="Data/Images/Sprites/UI/Title.png" 			/>
+	
+	<SpriteResource name="Tundra" 			image="Data/Images/Sprites/Backgrounds/Tundra.png" 	/>
+	<SpriteResource name="Desert" 			image="Data/Images/Sprites/Backgrounds/Desert.png" 	/>
+	<SpriteResource name="Swamp" 			image="Data/Images/Sprites/Backgrounds/Swamp.png" 	/>
+	<SpriteResource name="Volcano" 			image="Data/Images/Sprites/Backgrounds/Volcano.png" />
+	<SpriteResource name="Space" 			image="Data/Images/Sprites/Backgrounds/Space.png" 	/>
+	
+	<SpriteResource name="TundraTitleCard" 	image="Data/Images/Sprites/TitleCards/Tundra.png" 	/>
+	<SpriteResource name="DesertTitleCard" 	image="Data/Images/Sprites/TitleCards/Desert.png" 	/>
+	<SpriteResource name="SwampTitleCard" 	image="Data/Images/Sprites/TitleCards/Swamp.png" 	/>
+	<SpriteResource name="VolcanoTitleCard" image="Data/Images/Sprites/TitleCards/Volcano.png"  />
+	<SpriteResource name="SpaceTitleCard" 	image="Data/Images/Sprites/TitleCards/Space.png" 	/>
+	
+	<SpriteResource name="Clay Golem" 		image="Data/Images/Sprites/Enemies/Clay Golem.png"/>
+	<SpriteResource name="Sand Golem" 		image="Data/Images/Sprites/Enemies/Sand Golem.png"/>
+	<SpriteResource name="Rock Golem" 		image="Data/Images/Sprites/Enemies/Rock Golem.png"/>
+	<SpriteResource name="Lava Snake" 		image="Data/Images/Sprites/Enemies/Lava Snake.png"/>
+	<SpriteResource name="Ice Kite" 		image="Data/Images/Sprites/Enemies/Ice Kite.png"/>
+
+	<SpriteResource name="Ball Bullet" 		image="Data/Images/Sprites/Bullets/Ball.png"/>
+	<SpriteResource name="Capsule Bullet" 	image="Data/Images/Sprites/Bullets/Capsule.png"/>
+	<SpriteResource name="Cross Bullet" 	image="Data/Images/Sprites/Bullets/Cross.png"/>
+	<SpriteResource name="Star Bullet" 		image="Data/Images/Sprites/Bullets/Star.png"/>
+	<SpriteResource name="Chevron Bullet"	image="Data/Images/Sprites/Bullets/Chevron.png"/>
+	
+	<SpriteAnimation name="Expanding Bullet" durationSeconds="2" loopMode="looping" >
+		<SpriteResource keyframeStart="0" name="Expanding Bullet 0 - Ball" 		image="Data/Images/Sprites/Bullets/Ball.png"/>
+		<SpriteResource keyframeStart="0.5" name="Expanding Bullet 1 - Cross" 		image="Data/Images/Sprites/Bullets/Cross.png"/>
+		<SpriteResource keyframeStart="1" name="Expanding Bullet 2 - Capsule" 	image="Data/Images/Sprites/Bullets/Capsule.png"/>
+		<SpriteResource keyframeStart="1.5" name="Expanding Bullet 3 - Star" 	image="Data/Images/Sprites/Bullets/Star.png"/>
+	</SpriteAnimation>
+	
+	<SpriteAnimation name="WorldTransition" durationSeconds="5" >
+		<SpriteResource keyframeStart="0.0" name="WorldTransition1" image="Data/Images/Sprites/Backgrounds/Transition1.png"/>
+		<SpriteResource keyframeStart="0.5" name="WorldTransition2" image="Data/Images/Sprites/Backgrounds/Transition2.png"/>
+		<SpriteResource keyframeStart="1.0" name="WorldTransition3" image="Data/Images/Sprites/Backgrounds/Transition3.png"/>
+		<SpriteResource keyframeStart="1.5" name="WorldTransition4" image="Data/Images/Sprites/Backgrounds/Transition4.png"/>
+		<SpriteResource keyframeStart="2.0" name="WorldTransition5" image="Data/Images/Sprites/Backgrounds/Transition5.png"/>
+		<SpriteResource keyframeStart="2.5" name="WorldTransition6" image="Data/Images/Sprites/Backgrounds/Transition6.png"/>
+		<SpriteResource keyframeStart="3.0" name="WorldTransition7" image="Data/Images/Sprites/Backgrounds/Transition7.png"/>
+		<SpriteResource keyframeStart="3.5" name="WorldTransition8" image="Data/Images/Sprites/Backgrounds/Transition8.png"/>
+		<SpriteResource keyframeStart="4.0" name="WorldTransition9" image="Data/Images/Sprites/Backgrounds/Transition9.png"/>
+		<SpriteResource keyframeStart="4.5" name="WorldTransition10" image="Data/Images/Sprites/Backgrounds/Transition10.png"/>
+		<SpriteResource keyframeStart="4.9" name="WorldTransition11" image="Data/Images/Sprites/Backgrounds/Transition11.png"/>
+	</SpriteAnimation>
+	
+	<SpriteAnimation name="boom_particle" durationSeconds="0.8" >
+		<SpriteResource keyframeStart="0.067" name="Explosion0" 	image="Data/Images/Particles/boom0.png"/>
+		<SpriteResource keyframeStart="0.133" name="Explosion1" 	image="Data/Images/Particles/boom1.png"/>
+		<SpriteResource keyframeStart="0.200" name="Explosion2" 	image="Data/Images/Particles/boom2.png"/>
+		<SpriteResource keyframeStart="0.267" name="Explosion3" 	image="Data/Images/Particles/boom3.png"/>
+		<SpriteResource keyframeStart="0.333" name="Explosion4" 	image="Data/Images/Particles/boom4.png"/>
+		<SpriteResource keyframeStart="0.400" name="Explosion5" 	image="Data/Images/Particles/boom5.png"/>
+		<SpriteResource keyframeStart="0.467" name="Explosion6" 	image="Data/Images/Particles/boom6.png"/>
+		<SpriteResource keyframeStart="0.533" name="Explosion7" 	image="Data/Images/Particles/boom7.png"/>
+		<SpriteResource keyframeStart="0.600" name="Explosion8" 	image="Data/Images/Particles/boom8.png"/>
+		<SpriteResource keyframeStart="0.667" name="Explosion9" 	image="Data/Images/Particles/boom9.png"/>
+		<SpriteResource keyframeStart="0.733" name="Explosion10" 	image="Data/Images/Particles/boom10.png"/>
+		<SpriteResource keyframeStart="0.800" name="Explosion11" 	image="Data/Images/Particles/boom11.png"/>
+	</SpriteAnimation>
+	
+</SpriteResources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Arenas>
+	<Arena name="Desert Earth" background="Desert" titleCard="DesertTitleCard">
+		<Pattern name="Sand Golem Row">
+			<Spawn offset="-5,0" enemy="Sand Golem"/>
+			<Spawn offset="0,0" enemy="Sand Golem"/>
+			<Spawn offset="5,0" enemy="Sand Golem"/>
+		</Pattern>
+		<Pattern name="Sand Golem Column">
+			<Spawn offset="0,-1" enemy="Sand Golem"/>
+			<Spawn offset="0,0" enemy="Sand Golem"/>
+			<Spawn offset="0,1" enemy="Sand Golem"/>
+		</Pattern>
+		<Pattern name="Sand Golem Cross">
+			<Spawn offset="-1,0" enemy="Sand Golem"/>
+			<Spawn offset="1,0" enemy="Sand Golem"/>
+			<Spawn offset="0,-1" enemy="Rock Golem"/>
+			<Spawn offset="0,0" enemy="Sand Golem"/>
+			<Spawn offset="0,1" enemy="Sand Golem"/>
+		</Pattern>
+		<Pattern name="Baby's First Enemy Formation" origin="-4,-4"/>
+	</Arena>
+</Arenas>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="General\Game Entities">
+      <UniqueIdentifier>{f209d7dc-3d29-4125-a800-3e670acdcab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Game Behaviors">
+      <UniqueIdentifier>{39ad84b5-ca0a-4827-be1a-e9f462e5f6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Game Logic">
+      <UniqueIdentifier>{b07444e1-641a-4954-b738-241dceb10729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Program Management">
+      <UniqueIdentifier>{47bd53e4-91da-4b88-9de5-b8bab59bb465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Factories">
+      <UniqueIdentifier>{1bf13378-31ab-4345-ae11-f63db40bb8c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Win32.cpp">
+      <Filter>General\Program Management</Filter>
+    </ClCompile>
+    <ClCompile Include="TheApp.cpp">
+      <Filter>General\Program Management</Filter>
+    </ClCompile>
+    <ClCompile Include="TheGame.cpp">
+      <Filter>General\Game Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TheGameRenderer.cpp">
+      <Filter>General\Game Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>General\Game Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\GameEntity.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Agent.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Player.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Enemy.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Bullet.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="TheGameInput.cpp">
+      <Filter>General\Game Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Deflector.cpp">
+      <Filter>General\Game Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>General\Game Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\BulletFactory.cpp">
+      <Filter>General\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\EnemyFactory.cpp">
+      <Filter>General\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\Pattern.cpp">
+      <Filter>General\Factories</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TheApp.hpp">
+      <Filter>General\Program Management</Filter>
+    </ClInclude>
+    <ClInclude Include="TheGame.hpp">
+      <Filter>General\Game Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>General\Game Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\GameEntity.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Agent.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Player.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Enemy.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Bullet.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Deflector.hpp">
+      <Filter>General\Game Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>General\Game Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\EnemyFactory.hpp">
+      <Filter>General\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\BulletFactory.hpp">
+      <Filter>General\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\Pattern.hpp">
+      <Filter>General\Factories</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

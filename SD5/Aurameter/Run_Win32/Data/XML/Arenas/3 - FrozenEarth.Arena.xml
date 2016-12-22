@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Arenas>
+	<Arena name="Frozen Earth" background="Tundra" titleCard="TundraTitleCard">
+		<Pattern name="Baby's First Enemy Formation" origin="4,4">
+			<Spawn offset="-1,-1" enemy="Clay Golem"/>
+			<Spawn offset="0,0" enemy="Ice Kite"/>
+		</Pattern>
+		<Pattern name="Baby's First Enemy Formation" origin="-4,-4"/>
+	</Arena>
+</Arenas>
